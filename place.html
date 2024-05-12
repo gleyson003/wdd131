@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pará - Brazil</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pará - Brazil</h1>
+    </header>
+    <main>
+        <div class="line1"></div>
+        <picture class="place">
+            <source srcset="images/docas.webp" media="(min-width: 1000px)">
+            <source srcset="images/docas.webp" media="(min-width: 500px)">
+            <img src="images/belem-para-blog.webp" alt="Pará - Brazil" width="500" height="250">
+        </picture>
+        <div class="line2"></div>
+        <div class="grid">
+            <h2 id="title1">Data</h2>
+            <section class="data">
+                <p class="area"><strong>Area: </strong>1.245.870,704 sq km</p>
+                <p><strong>Population: </strong>8,120,131</p>
+                <p><strong>Capital: </strong>Belém</p>
+                <p><strong>Languages: </strong>Portuguese</p>
+                <p><strong>Currency: </strong>Real</p>
+                <p><strong>Time Zone: </strong>UTC-3</p>
+                <p><strong>Calling Code: </strong>+55 91</p>
+                <p class="lastP"><strong>Internet TLD: </strong>.pa</p>
+            </section>
+            <h2 id="title2">Weather</h2>
+            <section class="weather">
+                <picture class="weatherPic">
+                    <source srcset="images/weather_clouds_sun_sunny_icon.svg" media="(min-width: 1000px)">
+                    <source srcset="images/weather_clouds_sun_sunny_icon.svg" media="(min-width: 500px)">
+                    <img src="images/weather_clouds_sun_sunny_icon.svg" alt="Fortaleza - Brazil Temple" width="500" height="250">
+                </picture>
+                <p><strong>Temperature: </strong><span id="temperature"></span></p>
+                <p><strong>Conditions: </strong><span id="conditions"></span></p>
+                <p><strong>Wind: </strong><span id="wind"></span></p>
+                <p><strong>Wind Chill: </strong><span id="windChill"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Gleyson Lopes - Belém-PA, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
