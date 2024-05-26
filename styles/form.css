@@ -1,0 +1,129 @@
+header {
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    color: gold;
+    padding: 17px;
+}
+
+/*---FORM STYLE---*/
+.form {
+    margin: .5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: #b7b787;
+}
+
+.form label {
+    display: block;
+    font-size: 1.1rem;
+}
+
+.date {
+    margin-top: 1rem;
+}
+
+div {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="date"] {
+	caret-color: rgba(0, 0, 0, 0);
+    min-width: 99.5%;
+    height: 35px;
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+textarea {
+    min-width: 99.5%;
+    height: 150px;
+}
+
+.userName{
+    min-width: 99.4%;
+    height: 35px;
+}
+
+select {
+    min-width: 100%;
+    height: 35px;
+}
+
+/*---FORM VALIDATE REQUIRED---*/
+.form input:required {
+    border: solid 2px red;
+}
+
+.form input:required:valid {
+    border: solid 3px green;
+}
+
+/*---OVERALL RATING---*/
+.overall {
+    margin-top: 1.5rem;
+}
+
+.stars {
+    margin-top: -.2rem;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: black;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.stars > label:hover {
+	color: gold;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+/*---REVIEW and USERNAME STYLE---*/
+.review,
+.userNameLabel {
+	margin-top: 1.5rem;
+}
+
+/*---OPTIONAL'S COLOR---*/
+.optional {
+    color: rgba(5, 25, 206, 0.821);
+}
+
+/*---BUTTON STYLING---*/
+button{
+    display: block;
+    min-width: 100%;
+    margin: 1.5rem auto;
+    padding: .9rem;
+    font-size: 1rem;
+    background-color: gold;
+}
+
+/*---FOOTER---*/
+footer {
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    color: gold;
+    font-size: 1.1rem;
+    padding: 17px;
+}
