@@ -7,3 +7,130 @@
     padding: 1rem;
     font-size: 1.2rem;
 }
+
+main {
+    font-family: var(--paragraph-font);
+}
+
+.form {
+    margin: -10px 15vw 50px 15vw;
+}
+
+.form legend {
+    color: var(--accent2-color);
+    padding: 0 .5rem;
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent2-color);
+    font-size: 1rem;
+}
+
+.form div {
+    color: var(--accent2-color);
+    font-family: var(--heading-font);;
+    font-size: 1.6rem;
+}
+
+#position, #selectTypeOfDonation {    
+    width: 100%;
+    height: 50px;
+    max-width: 68vw;
+    border-radius: 10px;
+}
+
+.form .quantity, .form .donationType {
+    margin: 25px 0 0 0;
+    font-size: 1.2rem;
+}
+
+.form .quantity {
+    margin-bottom: -10px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 68vw;
+    height: 150px;
+    border-radius: 10px;
+}
+
+fieldset {
+    margin: 1rem 0;
+    border: 2px solid var(--accent2-color);
+    border-radius: 15px;
+    padding: 1rem 2%;
+    background-color: var(--primary-color);
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 63vw;
+    appearance: none;
+}
+
+.form input[type="radio"] {
+    margin-right: 6px;
+}
+
+.alertInvalid {
+    color: red;
+}
+
+.form input:required {
+    border: solid 2px red;
+}
+
+.form input:required:valid {
+    border: solid 2px green;
+}
+
+.form input[type="submit"] {    
+    background-image: linear-gradient(var(--secondary-color), var(--accent1-color));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 96%;
+    max-width: 42vw;
+    margin: 1rem 20vw 0 20%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1.2rem;
+    font-family: var(--paragraph-font);
+}
+
+.form input[type="submit"]:hover {
+    background-image: linear-gradient(var(--accent1-color), var(--primary-color));
+    color: white;
+}
+
+@media screen and (min-width: 370px ) and (max-width: 1000px) {
+    .form input[type="text"],
+    .form input[type="email"] {
+        width: 100%;
+        max-width: 57vw;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 60vw;
+    }
+
+    #position, #selectTypeOfDonation {    
+        width: 100%;
+        max-width: 60vw;
+    }
+}

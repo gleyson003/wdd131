@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/form-registration.css">
     <script src="scripts/project.js" defer></script>
+    <script src="scripts/form-registration.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,37 +23,52 @@
         </nav>
     </header>
     <main>
+        <h4>Fill out the form fields below to register for the championship.</h4>
         <form method="get" action="registration-complete.html" class="form">
-            <label for="product">Product Name:</label>
-            <select id="product" name="product" required>
-                <option value="" disabled selected>Select a Product ...</option>
-            </select>
+            <fieldset>
+                <Div>Personal datas</Div>
 
-            <label class="overall">Overall Rating
-                <div class="stars">
-                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-                </div>
-            </label>
+                <label class="firstNameLabel" for="firstname">
+                    First name<span class="alertInvalid">*</span>: <input class="firstName" type="text" id="firstname" name="firstname" required>
+                </label>
 
-            <label class="date">Date of Installation: <input type="date" name="installationDate" required></label>
+                <label class="lastNameLabel" for="lastname">
+                    Last name<span class="alertInvalid">*</span>: <input class="lastName" type="text" id="lastname" name="lastname" required>
+                </label>
+                
+                <label class="emailLabel" for="email">
+                    Email<span class="alertInvalid">*</span>: <input class="email" type="email" id="email" name="email" required>
+                </label>                
 
-            <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
-            <label><input type="checkbox" name="durability" value="yes">Durability</label>
-            <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
-            <label><input type="checkbox" name="perfomance" value="yes">Performance</label>
-            <label><input type="checkbox" name="design" value="yes">Design</label>
+                <label class="phoneLabel" for="phone">
+                    Phone number: <input class="phone" type="text" id="phone" name="phone">
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <Div>Donation</Div>
+                <div class="donationType">Type of donation</div>
+                <select id="selectTypeOfDonation" name="type" required>
+                    <option value="" disabled selected>Select an donation option ...</option>
+                </select>
 
-            <label for="review" class="review">Write a Review: </label>
-            <textarea id="review" name="review"></textarea>
+                <div class="quantity">Quantity</div>
+                <label><input type="radio" name="quantity" value="little">1 a 3 peaces or kilos</label>
+                <label><input type="radio" name="quantity" value="enouch">4 a 6 peaces or kilos</label>
+                <label><input type="radio" name="quantity" value="much">7 a 10 peaces or kilos</label>
 
-            <label class="userNameLabel" for="username">Your Name: <span class="optional">(optional)</span></label>
-            <input class="userName" type="text" id="username" name="username">
+                <label for="description" class="description">Descripte what you will donate: </label>
+                <textarea id="description" name="description"></textarea>
+            </fieldset>
 
-            <button type="submit"><strong>Post Review</strong></button>
+            <fieldset>
+                <Div>Position on Volleyball</Div>
+                <select id="position" name="position" required>
+                    <option value="" disabled selected>Which position do you play or like to play?</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Send registration"></input>
         </form>
     </main>
     <footer>
