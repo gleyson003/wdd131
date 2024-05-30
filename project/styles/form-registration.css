@@ -1,0 +1,9 @@
+#registrationNumber {
+    margin-top: -20px;
+    margin-bottom: 0;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}

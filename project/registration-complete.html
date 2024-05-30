@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Completed</title>
+    <link rel="stylesheet" href="styles/home-page.css">
+</head>
+<body>
+    <h1>We thank you for your desire to participate in this social project.</h1>
+    <h1>We wish you an excellent championship.</h1>
+    <hr>
+    <h1>Your registration was received!</h1>
+    <script>
+        const registrationCount = localStorage.getItem('registrationCount') || 0;
+        localStorage.setItem('registrationCount', Number(registrationCount) + 1);
+    </script>
+</body>
+</html>
